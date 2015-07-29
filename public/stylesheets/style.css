@@ -1,0 +1,64 @@
+html,
+body {
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  min-height: 100%;
+  background: #f5f5f5;
+  height: 100%;
+  width: 100%;
+}
+a {
+  color: #00b7ff;
+}
+.nopadding {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+  margin-top: 0;
+  margin-bot: 0;
+  padding: 0 !important;
+}
+#bluebar {
+  background: #00b7ff;
+  height: 20px;
+  visibility: hidden;
+}
+body {
+  height: 100%;
+}
+.wrap {
+  min-height: 100%;
+  height: 100%;
+}
+.wrap .container-fluid {
+  min-height: 100% !important;
+  height: 100%;
+}
+.wrap .container-fluid #btnrow {
+  height: 85%;
+}
+.wrap .container-fluid #btnrow #btnspan {
+  height: 100%;
+  padding: 0 20px 0 20px;
+}
+.wrap .container-fluid #btnrow #btnspan button {
+  height: 100%;
+  border-radius: 0;
+}
+.wrap .container-fluid #textarea {
+  height: 15%;
+  padding: 8px 0 0 0;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrap .container-fluid #textarea #centertext {
+  height: 100%;
+}
+.wrap .container-fluid #textarea #centertext #status {
+  float: left;
+  margin-right: 0;
+}
+.wrap .container-fluid #textarea #centertext #onoff {
+  float: left;
+  padding-left: 2px;
+}

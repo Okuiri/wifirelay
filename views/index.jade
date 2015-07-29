@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    #window.wrap
+        .container-fluid
+            .row
+                #bluebar.span12
+            #btnrow.row
+                #btnspan.span12
+                    button#ledtoggle.btn.btn-primary.btn-primary.btn-lg.btn-block Toggle Light
+            #indicator.row-fluid
+              .col-sm-4
+              #textarea.col-sm-4
+                span.col-sm-3
+                span(id='centertext').col-sm-6
+                    p(id='status' align='center') The light is currently:
+                    span(id='onoff') yet
+                span.col-sm-3
+              .col-sm-4
+        script(src='javascripts/index.js')

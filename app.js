@@ -4,13 +4,8 @@ var logger = require('morgan');
 var net = require('net');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var spark = require('sparknode');
 var app = express();
 
-var core = new spark.Core({
-  accessToken: "45404214d66462979846996e94c1581a62b0741c",
-  id: "johncena"
-});
 /*
 *core.on('connect', function(){
 *  console.log('login successful');

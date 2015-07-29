@@ -1,6 +1,14 @@
-module.exports = function(io) {
-    var ledState = 0;
+module.exports = function(io){
+    var spark = require('sparknode');
 
+    var core = new spark.Core({
+        accessToken: "45404214d66462979846996e94c1581a62b0741c",
+        id: "johncena"
+    });
+    var ledState = 0;
+    core.on('connect',function(){
+        core.relayControl(getLedState());
+    });
     io.sockets.on('connection', function (socket) {
         socket.on('disconnect', function () {
         });

@@ -32,6 +32,6 @@ module.exports = function(io){
     function updateUsers() {
         var onoff = getLedState();
         io.sockets.emit('ledOut', onoff);
-        //core.relayControl(onoff);
+        core.relayControl(onoff);
     }
 };

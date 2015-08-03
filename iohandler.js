@@ -1,14 +1,16 @@
 module.exports = function(io){
-    var spark = require('sparknode');
-
+    //var spark = require('sparknode');
+    var ledState = 0;
+    /*
     var core = new spark.Core({
         accessToken: "45404214d66462979846996e94c1581a62b0741c",
         id: "johncena"
     });
-    var ledState = 0;
+
     core.on('connect',function(){
         core.relayControl(getLedState());
     });
+    */
     io.sockets.on('connection', function (socket) {
         socket.on('disconnect', function () {
         });
@@ -32,6 +34,6 @@ module.exports = function(io){
     function updateUsers() {
         var onoff = getLedState();
         io.sockets.emit('ledOut', onoff);
-        core.relayControl(onoff);
+        //core.relayControl(onoff);
     }
 };

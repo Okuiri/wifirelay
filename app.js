@@ -1,9 +1,8 @@
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
-var net = require('net');
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var beta = require('./routes/beta');
 var app = express();
 
 /*
@@ -25,7 +24,7 @@ app.use(logger('dev'));
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
-app.use('/users', users);
+app.use('/beta', beta);
 
 
 
